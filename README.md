@@ -1,56 +1,60 @@
 # The Fresh Connection KPI Dashboard
 
-This Streamlit dashboard visualizes key Functional and Financial KPIs across 6 rounds of "The Fresh Connection" simulation game.
+This interactive Streamlit dashboard provides functional and financial KPI analysis across 6 rounds of "The Fresh Connection" simulation.
 
-## 🔧 Setup Instructions
+## 📁 Folder Structure
 
-### 1. Upload files to GitHub
-Create a repository with the following structure:
-
-```
 /your-repo
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
 └── /data
-    ├── finance_report.csv
-    ├── supplier.csv
-    ├── product.csv
-    ├── customer.csv
-    ├── component.csv
-    ├── supplier_component.csv
-    ├── warehouse.csv
-    ├── bottling_line.csv
-    └── mixers.csv
-```
+├── finance_report.csv
+├── supplier.csv
+├── product.csv
+├── customer.csv
+├── component.csv
+├── supplier_component.csv
+├── warehouse.csv
+├── bottling_line.csv
+└── mixers.csv
 
-### 2. Deploy on Streamlit Cloud
+markdown
+Copy
+Edit
 
-1. Sign in at [https://streamlit.io/cloud](https://streamlit.io/cloud)
-2. Click **New App** ➝ Connect your GitHub repo
-3. Set **Main file path** to `app.py`
-4. Click **Deploy**
+## 🚀 Deployment Instructions
 
-## 📊 Tabs Overview
+1. Upload all files to a GitHub repo (public or private).
+2. Visit [https://streamlit.io/cloud](https://streamlit.io/cloud).
+3. Click **New App** > Select your GitHub repo.
+4. Set `Main file path` to `app.py`.
+5. Click **Deploy**.
 
-### Purchase
-- Component Delivery Reliability
-- Rejection % / Obsolete %
-- Raw Material Cost %
-- Impact on ROI and COGS
+## 🎯 Features
 
-### Sales
-- Shelf Life, Service Levels
-- Forecasting Error
-- Product Obsolescence
-- Revenue and ROI contribution
+- 4 Tab Layout: Purchase, Sales, Supply Chain, Operations
+- Interactive filtering by Round
+- Visual analysis of KPIs using bar charts
+- Designed to prioritize suppliers, customers, and components impacting ROI and COGS
 
-### Supply Chain
-- Component & Product Availability
-- Revenue and ROI by product/component
+## 📊 KPI Coverage
 
-### Operations
-- Inbound & Outbound Warehouse Utilization
+### Purchase Tab
+- Delivery Reliability
+- Rejection %
+- Raw Material Cost
+
+### Sales Tab
+- Forecast Error
+- Service Level
+- Attained Shelf Life
+
+### Supply Chain Tab
+- Component Availability
+- Product Availability (OSA)
+
+### Operations Tab
+- Warehouse Cube Utilization
 - Production Plan Adherence
-- Impact on ROI and COGS
