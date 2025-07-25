@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="The Fresh Connection Dashboard", layout="wide")
 
 # Load all datasets from GitHub raw URLs (replace with your actual GitHub repo path)
-base_url = "https://raw.githubusercontent.com/yourusername/yourrepo/main/data/"
+base_url = "https://github.com/ShubhamGupta-GGN/TFC2/raw/refs/heads/main/data/"
 
 @st.cache_data
 def load_data():
